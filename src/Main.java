@@ -33,5 +33,13 @@ public class Main {
         catch(ZeroDenominatorException e){
             System.out.println("Errore: " + e.getMessage());
         }
+
+        /*Frazione f9 = new Frazione(0, -5);
+        try {
+            f9 = f9.inv();
+        }
+        catch (ZeroDenominatorException e) {
+            System.out.println("Errore: " + e.getMessage());
+        }*/
     }
 }
