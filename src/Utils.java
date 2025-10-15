@@ -10,9 +10,9 @@ public final class Utils {
             return gcd(b, a);
         }
 
-        // O(sqrt(b)) perché non ricordo l'altro modo
+        // O(n) non ricordo l'altro modo
         int gcd = 1;
-        for (int i = 2; i <= Math.sqrt(b); i++) {
+        for (int i = 2; i <= b/2; i++) {
             if  (b % i == 0 && a % i == 0) {
                 gcd = i;
             }

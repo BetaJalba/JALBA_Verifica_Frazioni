@@ -1,7 +1,6 @@
 public class Frazione implements Operando {
     public int _numeratore;
     public int _denominatore;
-
     public Frazione(int numeratore, int denominatore) {
         if  (denominatore == 0) {
             throw new ZeroDenominatorException("Denominatore non valido");
@@ -14,6 +13,7 @@ public class Frazione implements Operando {
     private static int denominatoreComune(Frazione first, Frazione other){
         first = first.semplifica();
         other = other.semplifica();
+
         return first._denominatore == other._denominatore ? first._denominatore : first._denominatore * other._denominatore;
     }
 
@@ -23,11 +23,9 @@ public class Frazione implements Operando {
         try {
             r = new Frazione(first._denominatore, first._numeratore) ;
         }
-        catch (ZeroDenominatorException e)
-        {
+        catch (ZeroDenominatorException e){
             throw new ZeroDenominatorException("Inversione non possibile");
         }
-
         return r;
     }
 

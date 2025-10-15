@@ -20,6 +20,9 @@ public class Main {
         System.out.println("Settima frazione (inv(f1)): " + f1.inv());
         System.out.println("Settima frazione (f1/f2): " + f1.div(f2));
 
+        Frazione f10 = new Frazione(125, 25);
+        System.out.println("Prima frazione: " + f10.semplifica());
+
         System.out.println("\nCollaudo della eccezione: inserire il denominatore nullo...\n");
 
         System.out.print("Inserisci il numeratore: ");
