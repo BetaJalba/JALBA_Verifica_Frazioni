@@ -1,8 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.HashSet;
-import java.util.Set;
-
 public class Frazione implements Operando {
     public int _numeratore;
     public int _denominatore;
